@@ -12,7 +12,9 @@ In this challenge, we are gonna learn "How to use Docker CLI?" and after that we
 ## Exercises
 
 **1: First let's check the current status of the Docker.** 
-<details><summary>Click to open</summary><p>
+<details>
+ <summary>Click to open</summary>
+
 Open your terminal and type: 
 ```shell
 $ docker version
@@ -47,7 +49,9 @@ Server: Docker Engine - Community
   Version:          0.18.0
   GitCommit:        fec3683
   ```
-  If you've got similar output, this means that your Docker installation is successful and your Docker Cli can communicate with Docker Daemon without any problem. This output also shows us Docker Cli - Docker Daemon versions and their details. In case of you get ``` Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified. ``` This means that Docker Cli could not connect to the Docker Daemon and probably the reason is that Docker Daemon didn't start properly. Just try to start the daemon process and retry again.</p></details>
+  If you've got similar output, this means that your Docker installation is successful and your Docker Cli can communicate with Docker Daemon without any problem. This output also shows us Docker Cli - Docker Daemon versions and their details. In case of you get ``` Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified. ``` This means that Docker Cli could not connect to the Docker Daemon and probably the reason is that Docker Daemon didn't start properly. Just try to start the daemon process and retry again.
+ </details>
+ 
 ***
 **2: It's time to get more information about our Docker installation.**
 
