@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cognitive Services # | Azure Developer College</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/trainingdays/assets/css/0.styles.6e657840.css" as="style"><link rel="preload" href="/trainingdays/assets/js/app.77101594.js" as="script"><link rel="preload" href="/trainingdays/assets/js/2.ded0ad42.js" as="script"><link rel="preload" href="/trainingdays/assets/js/43.45c5ebc8.js" as="script"><link rel="prefetch" href="/trainingdays/assets/js/10.824c7062.js"><link rel="prefetch" href="/trainingdays/assets/js/11.33b45e4c.js"><link rel="prefetch" href="/trainingdays/assets/js/12.822fcc16.js"><link rel="prefetch" href="/trainingdays/assets/js/13.daea07dd.js"><link rel="prefetch" href="/trainingdays/assets/js/14.b7070564.js"><link rel="prefetch" href="/trainingdays/assets/js/15.93038713.js"><link rel="prefetch" href="/trainingdays/assets/js/16.11700a81.js"><link rel="prefetch" href="/trainingdays/assets/js/17.013c3eb6.js"><link rel="prefetch" href="/trainingdays/assets/js/18.af27d226.js"><link rel="prefetch" href="/trainingdays/assets/js/19.95eefa81.js"><link rel="prefetch" href="/trainingdays/assets/js/20.d72f727d.js"><link rel="prefetch" href="/trainingdays/assets/js/21.9e838a16.js"><link rel="prefetch" href="/trainingdays/assets/js/22.6e7808b1.js"><link rel="prefetch" href="/trainingdays/assets/js/23.b0d61578.js"><link rel="prefetch" href="/trainingdays/assets/js/24.cb6ad96a.js"><link rel="prefetch" href="/trainingdays/assets/js/25.f6894b46.js"><link rel="prefetch" href="/trainingdays/assets/js/26.7afeca44.js"><link rel="prefetch" href="/trainingdays/assets/js/27.8f3e3c87.js"><link rel="prefetch" href="/trainingdays/assets/js/28.659292fb.js"><link rel="prefetch" href="/trainingdays/assets/js/29.bc609976.js"><link rel="prefetch" href="/trainingdays/assets/js/3.9f484c98.js"><link rel="prefetch" href="/trainingdays/assets/js/30.b7ba753a.js"><link rel="prefetch" href="/trainingdays/assets/js/31.313aed83.js"><link rel="prefetch" href="/trainingdays/assets/js/32.f85eb422.js"><link rel="prefetch" href="/trainingdays/assets/js/33.69060445.js"><link rel="prefetch" href="/trainingdays/assets/js/34.ecf41982.js"><link rel="prefetch" href="/trainingdays/assets/js/35.5a6981bd.js"><link rel="prefetch" href="/trainingdays/assets/js/36.55a23932.js"><link rel="prefetch" href="/trainingdays/assets/js/37.b5c109d3.js"><link rel="prefetch" href="/trainingdays/assets/js/38.502263ba.js"><link rel="prefetch" href="/trainingdays/assets/js/39.dd347186.js"><link rel="prefetch" href="/trainingdays/assets/js/4.23eb67de.js"><link rel="prefetch" href="/trainingdays/assets/js/40.e260de0b.js"><link rel="prefetch" href="/trainingdays/assets/js/41.a348f746.js"><link rel="prefetch" href="/trainingdays/assets/js/42.9d3a79a8.js"><link rel="prefetch" href="/trainingdays/assets/js/44.b1387fa8.js"><link rel="prefetch" href="/trainingdays/assets/js/45.daf2a18f.js"><link rel="prefetch" href="/trainingdays/assets/js/46.67560ec6.js"><link rel="prefetch" href="/trainingdays/assets/js/47.c43eb1c3.js"><link rel="prefetch" href="/trainingdays/assets/js/48.3a324eb8.js"><link rel="prefetch" href="/trainingdays/assets/js/49.744b538b.js"><link rel="prefetch" href="/trainingdays/assets/js/5.a406547b.js"><link rel="prefetch" href="/trainingdays/assets/js/50.0305478e.js"><link rel="prefetch" href="/trainingdays/assets/js/51.fb0f6fea.js"><link rel="prefetch" href="/trainingdays/assets/js/52.9aef0336.js"><link rel="prefetch" href="/trainingdays/assets/js/53.3e848a6e.js"><link rel="prefetch" href="/trainingdays/assets/js/54.f6ada1f6.js"><link rel="prefetch" href="/trainingdays/assets/js/55.51f16090.js"><link rel="prefetch" href="/trainingdays/assets/js/56.42a8a9c5.js"><link rel="prefetch" href="/trainingdays/assets/js/57.793c4bd7.js"><link rel="prefetch" href="/trainingdays/assets/js/58.f469d506.js"><link rel="prefetch" href="/trainingdays/assets/js/59.cc4f0a04.js"><link rel="prefetch" href="/trainingdays/assets/js/6.b63183bc.js"><link rel="prefetch" href="/trainingdays/assets/js/60.aa528b2b.js"><link rel="prefetch" href="/trainingdays/assets/js/61.23d1e322.js"><link rel="prefetch" href="/trainingdays/assets/js/62.c1937e32.js"><link rel="prefetch" href="/trainingdays/assets/js/63.95b606b8.js"><link rel="prefetch" href="/trainingdays/assets/js/64.5371aaed.js"><link rel="prefetch" href="/trainingdays/assets/js/65.2f201a08.js"><link rel="prefetch" href="/trainingdays/assets/js/66.44728eb2.js"><link rel="prefetch" href="/trainingdays/assets/js/67.2ac580b4.js"><link rel="prefetch" href="/trainingdays/assets/js/68.7a80d100.js"><link rel="prefetch" href="/trainingdays/assets/js/69.caf39265.js"><link rel="prefetch" href="/trainingdays/assets/js/7.303f1db0.js"><link rel="prefetch" href="/trainingdays/assets/js/70.ace68e7e.js"><link rel="prefetch" href="/trainingdays/assets/js/71.b1fca4aa.js"><link rel="prefetch" href="/trainingdays/assets/js/72.9864ebab.js"><link rel="prefetch" href="/trainingdays/assets/js/73.45490bea.js"><link rel="prefetch" href="/trainingdays/assets/js/74.70e71444.js"><link rel="prefetch" href="/trainingdays/assets/js/75.99839307.js"><link rel="prefetch" href="/trainingdays/assets/js/76.8c3bfc8e.js"><link rel="prefetch" href="/trainingdays/assets/js/77.48942a3c.js"><link rel="prefetch" href="/trainingdays/assets/js/78.fa5c298d.js"><link rel="prefetch" href="/trainingdays/assets/js/79.d4841068.js"><link rel="prefetch" href="/trainingdays/assets/js/8.c1e5538d.js"><link rel="prefetch" href="/trainingdays/assets/js/9.a5de28c0.js">
+    <link rel="stylesheet" href="/trainingdays/assets/css/0.styles.6e657840.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/trainingdays/" class="home-link router-link-active"><!----> <span class="site-name">Azure Developer College</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/azuredevcollege/trainingdays" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/azuredevcollege/trainingdays" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/trainingdays/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/trainingdays/day1/" class="sidebar-link">Day 1 Azure Fundamentals &amp; Infrastructure</a></li><li><a href="/trainingdays/day2/" class="sidebar-link">Day 2 Azure Development</a></li><li><a href="/trainingdays/day3/" aria-current="page" class="sidebar-link">Day 3 Data and AI</a></li><li><a href="/trainingdays/day4/" class="sidebar-link">Day 4 Azure DevOps</a></li><li><a href="/trainingdays/day5/" class="sidebar-link">Day 5 Identity and Architecture</a></li><li><a href="/trainingdays/day6/" class="sidebar-link">Day 6 Containerization</a></li><li><a href="/trainingdays/day7/" class="sidebar-link">Day 7 Kubernetes</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="cognitive-services"><a href="#cognitive-services" class="header-anchor">#</a> Cognitive Services</h1> <h2 id="here-is-what-you-will-learn"><a href="#here-is-what-you-will-learn" class="header-anchor">#</a> Here is what you will learn</h2> <ul><li>Create and use the Text Analysis Cognitive Service</li> <li>Create and use the Translate Cognitive Service</li> <li>Create and use the  Computer Vision Service and integrate it into an Node.js App</li> <li>Create and use the Face Cognitive Service</li></ul> <h1 id="what-are-azure-cognitive-services"><a href="#what-are-azure-cognitive-services" class="header-anchor">#</a> What are Azure Cognitive Services?</h1> <p>Azure Cognitive Services:</p> <ul><li>are APIs, SDKs and services available to help developers build intelligent applications without having direct Artificial Intelligence (AI), data science skills or knowledge.</li> <li>enable developers to easily add cognitive features into their applications.</li> <li>The goal of Azure Cognitive Services is to help developers create applications that can see, hear, speak, understand and even begin to reason.</li> <li>The catalog of services within Azure Cognitive Services can be categorized into five main pillars - <em>Vision</em>, <em>Speech</em>, <em>Language</em>, <em>Web Search</em>, and <em>Decision</em>.</li></ul> <p>In this challenge we will focus on the following Cognitive Services:</p> <table><thead><tr><th style="text-align:left;">Service Name</th> <th style="text-align:left;">Service Description</th></tr></thead> <tbody><tr><td style="text-align:left;"><a href="https://docs.microsoft.com/azure/cognitive-services/text-analytics/" title="Text Analytics" target="_blank" rel="noopener noreferrer">Text Analytics<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td style="text-align:left;">Text Analytics provides natural language processing over raw text for sentiment analysis, key phrase extraction and language detection.</td></tr> <tr><td style="text-align:left;"><a href="https://docs.microsoft.com/azure/cognitive-services/translator/" title="Translator Text" target="_blank" rel="noopener noreferrer">Translator Text<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td style="text-align:left;">Translator text provides for machine-based text translation in near real-time.</td></tr> <tr><td style="text-align:left;"><a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" title="Computer Vision" target="_blank" rel="noopener noreferrer">Computer Vision<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td style="text-align:left;">The Computer Vision service provides you with access to advanced algorithms for processing images and returning information.</td></tr> <tr><td style="text-align:left;"><a href="https://docs.microsoft.com/azure/cognitive-services/face/" title="Face" target="_blank" rel="noopener noreferrer">Face<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td style="text-align:left;">The Face service provides access to advanced face algorithms, enabling face attribute detection and recognition.</td></tr></tbody></table> <h1 id="create-and-use-a-text-analysis-cognitive-service"><a href="#create-and-use-a-text-analysis-cognitive-service" class="header-anchor">#</a> Create and use a Text Analysis Cognitive Service</h1> <p>You can solve these tasks in a programming language of your choice. For the sake of convenience, we are providing hints in <code>Node.js</code>. SDK support for <code>C#</code> or <code>.NET Core</code> is also available.</p> <table><thead><tr><th>Azure Cognitive Services</th> <th>Information</th></tr></thead> <tbody><tr><td><a href="https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/" target="_blank" rel="noopener noreferrer">Text Analytics API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td>https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/quickstarts/nodejs</td></tr></tbody></table> <p>🚩 <strong>Goal:</strong> Leverage Text Analytics API for extracting language, sentiment, key phrases, and entities from text. Please use a new resource group, e.g. <strong>adc-cognitive-rg</strong>. As a <strong>Pricing Tier</strong>, select the smallest possible in the chosen region.</p> <ol><li>Go to the Azure Portal, create a Text Analytics Service (in the <code>West Europe</code> region):</li></ol> <p><img src="/trainingdays/assets/img/CreateTA.4656f0e8.png" alt="Create Text Analytics Service"></p> <p><img src="/trainingdays/assets/img/detailscreateta.bc06a664.png" alt="Details of Creating the Text Analytics Service"></p> <h2 id="extract-sentiment-key-phrases-and-entities-from-unstructured-text"><a href="#extract-sentiment-key-phrases-and-entities-from-unstructured-text" class="header-anchor">#</a> Extract sentiment, key phrases and entities from unstructured text</h2> <h3 id="detect-language"><a href="#detect-language" class="header-anchor">#</a> Detect language</h3> <p>The Language Detection API detects the language of a text document, using the <a href="https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c7" target="_blank" rel="noopener noreferrer">Detect Language method<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>So, let's create a sample application:</p> <ul><li>Create a new folder <strong>adc-cognitive</strong> on you machine and start a new Node.JS project.
+<ul><li>run <code>npm init</code> on the command line and accept all options the wizard proposes</li></ul></li> <li>open Visual Studio Code by typing <code>code .</code></li> <li>Add the code provided below to a new <code>detect.js</code> file.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-endpoint-here&gt;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/text/analytics/v2.1/languages'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">get_language</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">documents</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> documents <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'documents'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'This is a document written in English.'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'Este es un document escrito en Español.'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'这是一个用中文写的文件'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">get_language</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Copy your Azure Cognitive Services Account <strong>key and endpoint</strong> into the code. You can find both on the <em>Overview</em> or <em>Quickstart</em> view in the Cognitive Services Account</li></ul> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node detect.js</code>.</p> <p>After a few seconds, a successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+   <span class="token property">&quot;documents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;detectedLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+               <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;English&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;iso6391Name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">1.0</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;detectedLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+               <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Spanish&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;iso6391Name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">1.0</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;detectedLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+               <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chinese_Simplified&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;iso6391Name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zh_chs&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">1.0</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;errors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+
+   <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="analyze-sentiment"><a href="#analyze-sentiment" class="header-anchor">#</a> Analyze sentiment</h2> <p>The Sentiment Analysis API detects the sentiment of a set of text records, using the <a href="https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9" target="_blank" rel="noopener noreferrer">Sentiment method<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. Sentiment analysis can be used to find out what customers think of your brand or topic by analyzing raw text for clues about positive or negative sentiment. The following example provides scores for two documents, one in English and another one in Spanish.</p> <ul><li>Go back to Visual Studio Code.</li> <li>Add the code provided below to a new <code>sentiment.js</code> file.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-endpoint-here&gt;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/text/analytics/v2.1/sentiment'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">get_sentiments</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">documents</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> documents <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'documents'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'language'</span><span class="token operator">:</span> <span class="token string">'en'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'I really enjoy the new XBox One S. It has a clean look, it has 4K/HDR resolution and it is affordable.'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'language'</span><span class="token operator">:</span> <span class="token string">'es'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'Este ha sido un dia terrible, llegué tarde al trabajo debido a un accidente automobilistico.'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">get_sentiments</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Copy your Cognitive Services Account key and endpoint into the code - as done before.</li></ul> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node sentiment.js</code>.</p> <p>The result is measured as positive if it's scored closer to 1.0 and negative if it's scored closer to 0.0.
+A successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+   <span class="token property">&quot;documents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+         <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">0.99984133243560791</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+         <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">0.024017512798309326</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;errors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>   <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="identify-linked-entities"><a href="#identify-linked-entities" class="header-anchor">#</a> Identify linked entities</h2> <p>The<a href="https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking" target="_blank" rel="noopener noreferrer"> Entities API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> identifies well-known entities in a text document, using the <a href="https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-V2-1/operations/5ac4251d5b4ccd1554da7634" target="_blank" rel="noopener noreferrer">Entities method<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. It extracts words from text, like &quot;United States&quot;, then give you the type and/or Wikipedia link for this word(s). The type for &quot;United States&quot; would be <code>location</code>, while the link to Wikipedia is <code>https://en.wikipedia.org/wiki/United_States</code>. The following example identifies entities for English documents.</p> <ul><li>Go back to Visual Studio Code.</li> <li>Add the code provided below to a new <code>entities.js</code> file.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-analytics-endpoint-here&gt;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/text/analytics/v2.1/entities'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">get_entities</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">documents</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> documents <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'documents'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token string">'id'</span><span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'language'</span><span class="token operator">:</span> <span class="token string">'en'</span><span class="token punctuation">,</span> <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'Microsoft is an It company.'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">get_entities</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Copy your Cognitive Services Account key and endpoint into the code - as done before.</li></ul> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node entities.js</code>.</p> <p>A successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>  
+   <span class="token property">&quot;documents&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+      <span class="token punctuation">{</span>  
+         <span class="token property">&quot;id&quot;</span><span class="token operator">:</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+         <span class="token property">&quot;entities&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+            <span class="token punctuation">{</span>  
+               <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;Microsoft&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;matches&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+                  <span class="token punctuation">{</span>  
+                     <span class="token property">&quot;wikipediaScore&quot;</span><span class="token operator">:</span><span class="token number">0.20872054383103444</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;entityTypeScore&quot;</span><span class="token operator">:</span><span class="token number">0.99996185302734375</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;text&quot;</span><span class="token operator">:</span><span class="token string">&quot;Microsoft&quot;</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;offset&quot;</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;length&quot;</span><span class="token operator">:</span><span class="token number">9</span>
+                  <span class="token punctuation">}</span>
+               <span class="token punctuation">]</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaLanguage&quot;</span><span class="token operator">:</span><span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaId&quot;</span><span class="token operator">:</span><span class="token string">&quot;Microsoft&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaUrl&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://en.wikipedia.org/wiki/Microsoft&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;bingId&quot;</span><span class="token operator">:</span><span class="token string">&quot;a093e9b9-90f5-a3d5-c4b8-5855e1b01f85&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;Organization&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>  
+               <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;Technology company&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;matches&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>  
+                  <span class="token punctuation">{</span>  
+                     <span class="token property">&quot;wikipediaScore&quot;</span><span class="token operator">:</span><span class="token number">0.82123868042800585</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;text&quot;</span><span class="token operator">:</span><span class="token string">&quot;It company&quot;</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;offset&quot;</span><span class="token operator">:</span><span class="token number">16</span><span class="token punctuation">,</span>
+                     <span class="token property">&quot;length&quot;</span><span class="token operator">:</span><span class="token number">10</span>
+                  <span class="token punctuation">}</span>
+               <span class="token punctuation">]</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaLanguage&quot;</span><span class="token operator">:</span><span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaId&quot;</span><span class="token operator">:</span><span class="token string">&quot;Technology company&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;wikipediaUrl&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://en.wikipedia.org/wiki/Technology_company&quot;</span><span class="token punctuation">,</span>
+               <span class="token property">&quot;bingId&quot;</span><span class="token operator">:</span><span class="token string">&quot;bc30426e-22ae-7a35-f24b-454722a47d8f&quot;</span>
+            <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;errors&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="create-and-use-the-translate-cognitive-service"><a href="#create-and-use-the-translate-cognitive-service" class="header-anchor">#</a> Create and use the Translate Cognitive Service</h2> <p>There is also a Congitive Service that let's you translate text &quot;on-the-fly&quot; with just a simple request - same as for the Text Analysis service used before.</p> <p>To use the Translation Service, you need to create a &quot;Translator Text&quot; resource in Azure. please go back to the Portal, click on &quot;Create a resource&quot; and search for &quot;Text Translator&quot;. Create such a service, giving it a globally unique name and choosing the lowest &quot;Pricing Tier&quot; available.</p> <p><img src="/trainingdays/assets/img/TTCreateDetails.023fef52.png" alt="Translator Text API Details"></p> <p>Now, back in Visual Studio Code, add a new JavaScript file called <code>translate-text.js</code>.</p> <p>Add the code provided below:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-translator-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;https://api.cognitive.microsofttranslator.com&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> region <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-text-translator-service-region here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/translate?api-version=3.0&amp;to=es&amp;to=it'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">translate_text</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">documents</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+            <span class="token string">'Ocp-Apim-Subscription-Region'</span><span class="token operator">:</span> region<span class="token punctuation">,</span>
+            <span class="token string">'Content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> documents <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">'text'</span><span class="token operator">:</span> <span class="token string">'Hello World! We hope you enjoy your day here at the Microsoft office in Munich!'</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">translate_text</span><span class="token punctuation">(</span>documents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Copy your Text Translator Account <strong>key</strong> into the code - as done before. <em>Endpoint is already predefined. <em><strong>No</strong></em> need to change it.</em></p> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node translate-text.js</code>.</p> <p>A successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;detectedLanguage&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;translations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;¡Hola mundo! ¡Esperamos que disfrute de su día aquí en la oficina de Microsoft en Múnich!&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;to&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Salve, mondo! Speriamo che vi piaccia la vostra giornata qui presso l'ufficio Microsoft a Monaco di Baviera!&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;to&quot;</span><span class="token operator">:</span> <span class="token string">&quot;it&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="create-and-use-the-computer-vision-service-using-node-js-app"><a href="#create-and-use-the-computer-vision-service-using-node-js-app" class="header-anchor">#</a> Create and use the Computer Vision Service using Node.js App</h2> <p>There is also a Cognitive Service that let's you analyze images with just a simple request to an API - same as for the Text Translator service used previously.</p> <p>To use that service, you need to create a &quot;Computer Vision&quot; resource in Azure. Please go back to the Portal, click on &quot;Create a resource&quot; and search for &quot;Computer Vision&quot;. Create such a service in the <code>West Europe</code> region, giving it a globally unique name and by choosing the lowest &quot;Pricing Tier&quot; available.</p> <p>Now, back in Visual Studio Code, add a new JavaScript file called <code>analyze-image.js</code>.</p> <p>Add the code provided below:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-computer-vision-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-computer-vision-endpoint-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/vision/v2.1/analyze'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">analyze_image</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">image</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+            <span class="token string">'Content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> imageUrl <span class="token operator">=</span>
+    <span class="token string">'https://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> image <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'url'</span><span class="token operator">:</span> imageUrl
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">analyze_image</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Copy your Computer Vision Account key and the endpoint into the code - as done before.</p> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node analyze-image.js</code>.</p> <p>A successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;categories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;outdoor_water&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;score&quot;</span><span class="token operator">:</span> <span class="token number">0.9921875</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;requestId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;34502128-82eb-40c4-8149-9af1c16a650e&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;metadata&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">959</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Jpeg&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="create-and-run-the-face-cognitive-services-using-node-js"><a href="#create-and-run-the-face-cognitive-services-using-node-js" class="header-anchor">#</a> Create and run the Face Cognitive Services using Node.js</h2> <p>There is also a Cognitive Service that let's you detect and analyze face with just a simple request to an API - same as for the Computer Vision service used previously.</p> <p>To use that service, you need to create a &quot;Face&quot; service in Azure. Please go back to the Portal, click on &quot;Create a resource&quot; and search for &quot;Face&quot;. Create such a service in the <code>West Europe</code> region, giving it a globally unique name and by choosing the lowest &quot;Pricing Tier&quot; available.</p> <p>Now, back in Visual Studio Code, add a new JavaScript file called <code>detect-face.js</code>.</p> <p>Add the code provided below:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> https <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> subscription_key <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-face-key-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> endpoint <span class="token operator">=</span> <span class="token string">&quot;&lt;paste-your-face-endpoint-here&gt;&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// please see the query params!</span>
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token string">'/face/v1.0/detect?returnFaceId=true&amp;returnFaceLandmarks=false&amp;returnFaceAttributes=age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">response_handler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">d</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        body <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> body_ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> body__ <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>body_<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'  '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>body__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Error: '</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">detect_face</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">image</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> body <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> request_params <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        hostname<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>endpoint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hostname<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'Ocp-Apim-Subscription-Key'</span><span class="token operator">:</span> subscription_key<span class="token punctuation">,</span>
+            <span class="token string">'Content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request_params<span class="token punctuation">,</span> response_handler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> imageUrl <span class="token operator">=</span>
+    <span class="token string">'https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> image <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'url'</span><span class="token operator">:</span> imageUrl
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">detect_face</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Copy your Face Account key and the endpoint into the code - as done before.</p> <p>You are all set. Now run the program from a terminal, change into the directory where the code is and run <code>node detect-face.js</code>.</p> <p>A successful response is returned in JSON, as shown in the following example:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;faceId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e2dd7bbf-8a78-4dde-b48c-4f2d9f5a12cc&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;faceRectangle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;top&quot;</span><span class="token operator">:</span> <span class="token number">621</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;left&quot;</span><span class="token operator">:</span> <span class="token number">616</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">195</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">195</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;faceAttributes&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;smile&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;headPose&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;pitch&quot;</span><span class="token operator">:</span> <span class="token number">-11.4</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roll&quot;</span><span class="token operator">:</span> <span class="token number">7.7</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;yaw&quot;</span><span class="token operator">:</span> <span class="token number">5.3</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;gender&quot;</span><span class="token operator">:</span> <span class="token string">&quot;male&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">29</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;facialHair&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;moustache&quot;</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;beard&quot;</span><span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sideburns&quot;</span><span class="token operator">:</span> <span class="token number">0.1</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;glasses&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NoGlasses&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;emotion&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;anger&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;contempt&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;disgust&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;fear&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;happiness&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;neutral&quot;</span><span class="token operator">:</span> <span class="token number">0.999</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sadness&quot;</span><span class="token operator">:</span> <span class="token number">0.001</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;surprise&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;blur&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;blurLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;high&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.89</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;exposure&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;exposureLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;goodExposure&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.51</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;noise&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;noiseLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;medium&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.59</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;makeup&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;eyeMakeup&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lipMakeup&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accessories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;occlusion&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;foreheadOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;eyeOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mouthOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hair&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;bald&quot;</span><span class="token operator">:</span> <span class="token number">0.04</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;invisible&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hairColor&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.98</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;brown&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.87</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gray&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.85</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;other&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.25</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blond&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.07</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.02</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;faceId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2e6844aa-7f2f-4e96-a5f1-5c0063e8b069&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;faceRectangle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;top&quot;</span><span class="token operator">:</span> <span class="token number">693</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;left&quot;</span><span class="token operator">:</span> <span class="token number">1503</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">180</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">180</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;faceAttributes&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;smile&quot;</span><span class="token operator">:</span> <span class="token number">0.003</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;headPose&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;pitch&quot;</span><span class="token operator">:</span> <span class="token number">-9</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roll&quot;</span><span class="token operator">:</span> <span class="token number">-0.5</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;yaw&quot;</span><span class="token operator">:</span> <span class="token number">-1.5</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;gender&quot;</span><span class="token operator">:</span> <span class="token string">&quot;female&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">58</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;facialHair&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;moustache&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;beard&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sideburns&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;glasses&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NoGlasses&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;emotion&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;anger&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;contempt&quot;</span><span class="token operator">:</span> <span class="token number">0.001</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;disgust&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;fear&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;happiness&quot;</span><span class="token operator">:</span> <span class="token number">0.003</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;neutral&quot;</span><span class="token operator">:</span> <span class="token number">0.984</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sadness&quot;</span><span class="token operator">:</span> <span class="token number">0.011</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;surprise&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;blur&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;blurLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;high&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.83</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;exposure&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;exposureLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;goodExposure&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.41</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;noise&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;noiseLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;high&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">0.76</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;makeup&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;eyeMakeup&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lipMakeup&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accessories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;occlusion&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;foreheadOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;eyeOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mouthOccluded&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hair&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;bald&quot;</span><span class="token operator">:</span> <span class="token number">0.06</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;invisible&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hairColor&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.99</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gray&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.89</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;other&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.64</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;brown&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.34</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blond&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.07</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;confidence&quot;</span><span class="token operator">:</span> <span class="token number">0.03</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h1 id="house-keeping-lab-cleanup"><a href="#house-keeping-lab-cleanup" class="header-anchor">#</a> House Keeping: Lab Cleanup</h1> <p>Remove the sample resource group.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ az group delete -n adc-cognitive-rg
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/azuredevcollege/trainingdays/edit/master/day3/challenges/challenge-4.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/trainingdays/assets/js/app.77101594.js" defer></script><script src="/trainingdays/assets/js/2.ded0ad42.js" defer></script><script src="/trainingdays/assets/js/43.45c5ebc8.js" defer></script>
+  </body>
+</html>
